@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - grunt-bower-requirejs > bower-requirejs > lodash:
+        patched: '2019-05-17T23:21:00.391Z'
+  'npm:minimatch:20160620':
+    - grunt-bower-requirejs > bower-requirejs > file-utils > minimatch:
+        patched: '2019-05-17T23:21:00.391Z'
+    - grunt-bower-requirejs > load-grunt-tasks > findup-sync > glob > minimatch:
+        patched: '2019-05-17T23:21:00.391Z'
+    - grunt-bower-requirejs > bower-requirejs > file-utils > glob > minimatch:
+        patched: '2019-05-17T23:21:00.391Z'
+    - grunt-bower-requirejs > bower-requirejs > file-utils > findup-sync > glob > minimatch:
+        patched: '2019-05-17T23:21:00.391Z'
+  'npm:qs:20140806-1':
+    - grunt-contrib-watch > tiny-lr-fork > qs:
+        patched: '2019-05-17T23:21:00.391Z'
